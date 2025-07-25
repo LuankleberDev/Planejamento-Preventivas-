@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planejamento de Preventivas</title>
+  <link href="acpp.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Planejamento de Carretas</h1>
+  <div class="tabs">
+    <button class="tab-button" onclick="showTab('preventivas')">Preventivas</button>
+    <button class="tab-button" onclick="showTab('calibragens')">Calibragens</button>
+  </div>
+
+  <div id="filter-container">
+    <input type="text" id="transportadoraInput" placeholder="Filtrar por transportadora..." oninput="filterTable()" />
+  </div>
+
+  <div id="preventivas" class="tab-content">
+    <table id="preventivaTable"><thead></thead><tbody></tbody></table>
+  </div>
+  <div id="calibragens" class="tab-content" style="display:none;">
+    <table id="calibragemTable"><thead></thead><tbody></tbody></table>
+  </div>
+
+  <script src="acpp.js"></script>
+</body>
+</html>
